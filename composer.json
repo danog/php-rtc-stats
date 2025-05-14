@@ -25,7 +25,6 @@
   "require": {
     "php": "^8.4",
     "quasarstream/mixin": "^v1.0",
-    "quasarstream/dtls": "^v1.0",
     "quasarstream/ice": "^v1.0"
   },
   "autoload": {

@@ -11,7 +11,7 @@
 
 namespace Webrtc\Stats;
 
-use Webrtc\DTLS\Enum\TLSState;
+use Webrtc\Stats\enum\TLSState;
 use Webrtc\ICE\Enum\IceRole;
 use Webrtc\Stats\enum\StatType;
 
