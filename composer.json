@@ -1,7 +1,7 @@
 {
-    "name": "quasarstream/stats",
+    "name": "danog/php-rtc-stats",
     "type": "library",
-    "description": "A PHP implementation of the WebRTC Statistics API for tracking RTP, DTLS, and media performance metrics.",
+    "description": "A PHP implementation of the WebRTC Statistics API for tracking RTP, DTLS, and media performance metrics. Fork with FFI made optional and a pure-PHP DTLS/SRTP stack, maintained for MadelineProto.",
     "keywords": [
         "webrtc",
         "stats"
@@ -32,5 +32,8 @@
             "Webrtc\\Stats\\": "src"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "replace": {
+        "quasarstream/stats": "self.version"
+    }
 }
