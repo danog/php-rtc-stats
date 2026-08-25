@@ -7,9 +7,9 @@ A PHP implementation of the WebRTC Statistics API for tracking  RTP, DTLS, and m
 
 ## About this fork
 
-This is the `danog/php-rtc-stats` PHP 8.2+ fork used by MadelineProto. It is published separately from upstream and declares that it replaces `quasarstream/stats`.
+This is the `danog/php-rtc-stats` PHP 8.2+ fork used by MadelineProto. It is published under the `danog/php-rtc-stats` Composer package name.
 
-The forked stack keeps the upstream `quasarstream/*` dependency constraints for compatibility. Each `danog/php-rtc-*` package replaces its upstream counterpart, so consumers select the complete maintained stack by requiring the corresponding danog packages together.
+All internal Composer dependencies use their `danog/php-rtc-*` package names directly, so installing a component selects the maintained danog packages throughout the dependency graph.
 
 ##  Features
 

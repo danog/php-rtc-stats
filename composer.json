@@ -24,16 +24,13 @@
     ],
     "require": {
         "php": "^8.2",
-        "quasarstream/mixin": "^v1.0",
-        "quasarstream/ice": "^v1.0"
+        "danog/php-rtc-mixin": "^v1.0",
+        "danog/php-rtc-ice": "^v1.0"
     },
     "autoload": {
         "psr-4": {
             "Webrtc\\Stats\\": "src"
         }
     },
-    "minimum-stability": "dev",
-    "replace": {
-        "quasarstream/stats": "self.version"
-    }
+    "minimum-stability": "dev"
 }
