@@ -1,7 +1,7 @@
 {
     "name": "danog/php-rtc-stats",
     "type": "library",
-    "description": "A PHP implementation of the WebRTC Statistics API for tracking RTP, DTLS, and media performance metrics. Fork with FFI made optional and a pure-PHP DTLS/SRTP stack, maintained for MadelineProto.",
+    "description": "WebRTC statistics objects for RTP, DTLS, ICE, and media metrics. MadelineProto's PHP 8.2+ fork supports the modular danog/php-rtc stack.",
     "keywords": [
         "webrtc",
         "stats"
