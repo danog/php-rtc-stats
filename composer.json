@@ -35,5 +35,5 @@
             "Webrtc\\Stats\\": "src"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
