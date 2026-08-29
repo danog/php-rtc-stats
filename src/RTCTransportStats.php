@@ -15,7 +15,7 @@ use Webrtc\Stats\enum\TLSState;
 use Webrtc\ICE\Enum\IceRole;
 use Webrtc\Stats\enum\StatType;
 
-class RTCTransportStats extends RTCStats
+final class RTCTransportStats extends RTCStats
 {
     public function __construct(
         public string $id,

@@ -16,7 +16,7 @@ use Webrtc\Mixin\DataClass;
 use Webrtc\Stats\enum\StatType;
 
 #[DataClass]
-class RTCOutboundRtpStreamStats extends RTCSentRtpStreamStats
+final class RTCOutboundRtpStreamStats extends RTCSentRtpStreamStats
 {
     /**
      * @param string $id The id associated with this stat.

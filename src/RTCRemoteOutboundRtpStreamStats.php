@@ -16,7 +16,7 @@ use Webrtc\Mixin\DataClass;
 use Webrtc\Stats\enum\StatType;
 
 #[DataClass]
-class RTCRemoteOutboundRtpStreamStats extends RTCSentRtpStreamStats
+final class RTCRemoteOutboundRtpStreamStats extends RTCSentRtpStreamStats
 {
     public function __construct(
         string $id,

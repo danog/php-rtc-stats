@@ -16,7 +16,7 @@ use Webrtc\Mixin\DataClass;
 use Webrtc\Stats\enum\StatType;
 
 #[DataClass]
-class RTCRemoteInboundRtpStreamStats extends RTCReceivedRtpStreamStats
+final class RTCRemoteInboundRtpStreamStats extends RTCReceivedRtpStreamStats
 {
 
     /**

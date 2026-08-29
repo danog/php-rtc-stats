@@ -14,8 +14,9 @@ namespace Webrtc\Stats;
 /**
  * Provides statistics data about WebRTC connections.
  */
-class RTCStatsReport
+final class RTCStatsReport
 {
+    /** @var array<string, RTCStats> */
     private array $stats = [];
 
     public function add(RTCStats $stats): void
@@ -24,7 +25,7 @@ class RTCStatsReport
     }
 
     /**
-     * @return RTCTransportStats[]
+     * @return array<string, RTCStats>
      */
     public function getStats(): array
     {
