@@ -27,7 +27,7 @@ final class RTCOutboundRtpStreamStats extends RTCSentRtpStreamStats
      * @param int $packetsSent Total number of RTP packets sent for this SSRC.
      * @param int $bytesSent Total number of bytes sent for this SSRC.
      * @param string $trackId ID of media stream track (UUID)
-     * @param DateTimeImmutable $dateTime The timestamp associated with this object.
+     * @param DateTimeImmutable|null $dateTime The timestamp associated with this object (now, if null).
      */
     public function __construct(
         string            $id,
@@ -38,7 +38,7 @@ final class RTCOutboundRtpStreamStats extends RTCSentRtpStreamStats
         int               $packetsSent,
         int               $bytesSent,
         public string     $trackId,
-        DateTimeImmutable $dateTime = new DateTimeImmutable()
+        ?DateTimeImmutable $dateTime = null
     )
     {
         parent::__construct($id, $type, $ssrc, $kind, $transportId, $packetsSent, $bytesSent, $dateTime);
