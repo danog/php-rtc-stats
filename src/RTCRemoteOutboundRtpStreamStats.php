@@ -25,7 +25,7 @@ final class RTCRemoteOutboundRtpStreamStats extends RTCSentRtpStreamStats
         string $transportId,
         int $packetsSent,
         int $bytesSent,
-        DateTimeImmutable $dateTime = new DateTimeImmutable(),
+        ?DateTimeImmutable $dateTime = null,
         StatType $type = StatType::RemoteOutboundRtpStream,
         public ?DateTimeImmutable $remoteTimestamp = null
     )

@@ -21,7 +21,7 @@ class RTCRtpStreamStats extends RTCStats
     /**
      * @param string $id The id associated with this stat.
      * @param StatType $type The type of the stat.
-     * @param DateTimeImmutable $dateTime The timestamp associated with this object.
+     * @param DateTimeImmutable|null $dateTime The timestamp associated with this object (now, if null).
      * @param int $ssrc The Synchronization Source identifier.
      * @param string $kind Stream Type (e.g. video, audio)
      * @param string $transportId The ID of DTLSTransport object.
@@ -29,7 +29,7 @@ class RTCRtpStreamStats extends RTCStats
     public function __construct(
         string        $id,
         StatType      $type,
-        DateTimeImmutable     $dateTime,
+        ?DateTimeImmutable $dateTime,
         public int    $ssrc,
         public string $kind,
         public string $transportId

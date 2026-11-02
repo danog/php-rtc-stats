@@ -22,7 +22,7 @@ final class RTCRemoteInboundRtpStreamStats extends RTCReceivedRtpStreamStats
     /**
      * @param string $id The id associated with this stat.
      * @param StatType $type The type of the stat.
-     * @param DateTimeImmutable $dateTime The timestamp associated with this object.
+     * @param DateTimeImmutable|null $dateTime The timestamp associated with this object (now, if null).
      * @param int $ssrc The Synchronization Source identifier.
      * @param string $kind Stream Type (e.g. video, audio)
      * @param string $transportId The ID of DTLSTransport object.
@@ -43,7 +43,7 @@ final class RTCRemoteInboundRtpStreamStats extends RTCReceivedRtpStreamStats
         public float $roundTripTime,
         public float $fractionLost,
         StatType     $type = StatType::RemoteInboundRtpStream,
-        DateTimeImmutable    $dateTime = new DateTimeImmutable(),
+        ?DateTimeImmutable $dateTime = null,
     )
     {
         parent::__construct($id, $type, $dateTime, $ssrc, $kind, $transportId, $packetsReceived, $packetsLost, $jitter);
